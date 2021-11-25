@@ -1,19 +1,19 @@
 Package.describe({
-  name: 'scholtzm:steam',
-  version: '1.2.0',
+  name: '1life1chance:steam',
+  version: '2.5.1',
   summary: 'Steam OpenID integration for Meteor',
-  git: 'https://github.com/scholtzm/meteor-steam',
+  git: 'https://github.com/onurcansevinc/meteor-steam',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.2.0.2');
+  api.versionsFrom('2.5.1');
 
   api.use('oauth2', ['client', 'server']);
   api.use('oauth', ['client', 'server']);
-  api.use('http', 'server');
+  api.use('http@1.0.0', 'server');
   api.use('underscore', 'server');
-  api.use('templating', 'client');
+  api.use('templating@1.0.0', 'client');
   api.use('random', 'client');
   api.use('service-configuration', 'client');
 
